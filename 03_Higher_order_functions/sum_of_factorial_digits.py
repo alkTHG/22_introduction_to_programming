@@ -30,6 +30,12 @@ def sum_digits(n):
     return sum
 
 
-print(sum_digits(sum_of_factorials(100)))
+if __name__ == '__main__':
+    def sum_of_factorial_digits(n):
+        print(sum_digits(sum_of_factorials(n)))
+
+
+sum_of_factorial_digits(10)
+
 
 
