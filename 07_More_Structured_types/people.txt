@@ -1,0 +1,48 @@
+Ziva Sacharissa	Graduate Accelerator	UCL	MSc Business Analytics
+Youssef Hall	Graduate Accelerator	Nottingham	MEng Aerospace Engineering
+Karina Malone	Graduate Accelerator	Manchester	BSc Mathematics
+James Judd	Graduate Accelerator	Durham	MSc Physics
+Natalia Jurcakova	Graduate Accelerator	UCL	MSci Neuroscience
+Negin Dowlatshahi Eidgahi	Graduate Accelerator	Salford	BEng Mechanical Engineering
+Joshua Prior	Graduate Accelerator	Leeds	BSc Mathematics
+Robert Maksymow	Graduate Accelerator	University of Zielona"	BSc Mechanical Engineering
+Ross Carmichael	Graduate Accelerator	Edinburgh	MSc Physics
+Jordan Byrne	Graduate Accelerator	UCLAN	BSc Quantity Surveying
+Ciara Shields	Graduate Accelerator	Glasgow	MEng Mechanical Engineering
+Abigail Forbes	Graduate Accelerator	York	MPhys Physics with Astrophysics
+Tanapat Tanjittasuwan	Graduate Accelerator	Manchester	Meng Chemical Engineering
+Yuandong Wang Ruan	Graduate Accelerator	Imperial	Meng Aeronautical Engineering
+Aura-Maria Vilciu	Graduate Accelerator	Manchester	BEng Electronic Engineering
+Naoki Ueda	Graduate Accelerator	Kent	MSc Computational Biology
+Hassan Yasin	Graduate Accelerator	Liverpool	Manufacturing Engineering with Management & Systems Technology
+Neeraj Lalji	Graduate Accelerator	Birmingham	MSci Computational Neuroscience with Cognitive Robotics
+William Mcfarlane	Graduate Accelerator	Durham	BSc Physics
+Anca Trimbaciu	Graduate Accelerator	Manchester	MSc Architecture
+Stephanie Mary Isreal	Graduate Accelerator	Cardiff	BA Journalism & Communications
+Kantapat Tanjittasuwan	Graduate Accelerator	Imperial	Meng Chemical Engineering
+Jack Jenkinson	Graduate Accelerator	Manchester	BSc Mathematics
+Chloe Brown	Graduate Accelerator	Manchester	MEng Electrical & Electronic Eng
+Aarjav Jain	Graduate Accelerator	Cambridge	MSc Physics
+Oscar Medina	Graduate Accelerator	Manchester	MEng Materials Science and Engineering
+Ewan Bowler	Graduate Accelerator	Durham	BA History
+Edmondo Mazzoncini	Graduate Accelerator	Manchester	MPhys Physics with Astronomy
+Drew Soul	Graduate Accelerator	Liverpool	MPhy Theoretical Physics
+Declan Ying Hui Lee	Graduate Accelerator	Sheffield	Meng Chemical Engineering
+Bethan Cropper	Graduate Accelerator	Manchester	PhD Nuclear Physics
+Lucy Handford	Graduate Accelerator	Warwick	BSc Chemistry
+Danyaal Islam	Graduate Accelerator	Manchester	MEng Electronic Eng
+Jake Jones	Graduate Accelerator	UCLAN	Meng Aerospace Engineering
+Alexandra Bonta	Graduate Accelerator	Manchester	MSc Astronomy
+Alan Kerby	Graduate Accelerator	Kings College London	PhD Physiology
+John Chen	Graduate Accelerator	Manchester	BEng Mechatronics Engineering
+Carissa Mashinta	Graduate Accelerator	UCL	MSc Business Analytics
+Naomi Kennedy	Graduate Accelerator	Exeter	PhD Mathematics
+Colleen Hood	Graduate Accelerator	Exeter	BSc Biomedical Science
+Joseph Mcdonagh	Graduate Accelerator	Kent	BSc Mathematics
+Eleanor Kilgallon	Graduate Accelerator	Sheffield	MSc Archeological Sciences
+Luca Torsello	Graduate Accelerator	Leeds	BA Physics and Astronomy
+Ruchika Scott	Graduate Accelerator	Sheffield	MEng Mechanical Engineering
+Ines Cortina	Graduate Accelerator	Manchester	MSc Biotechnolgy
+Asima Fiaz	Graduate Accelerator	Manchester Met	Economics
+Robert Woodward-Massey	Graduate Accelerator	Leeds	PhD Atmospheric Chemistry
+Douglas Haigh	Graduate Accelerator	Bristol	MSc Mathematics
