@@ -84,5 +84,5 @@ print('V' in numerals)
 for key in numerals:
     print(key, "=>", numerals[key])
 
-curl https://inst.EECS.Berkeley.EDU//~cs61a/fa11/shakespeare.txt > shakespeare.txt
+# curl https://inst.EECS.Berkeley.EDU//~cs61a/fa11/shakespeare.txt > shakespeare.txt
 

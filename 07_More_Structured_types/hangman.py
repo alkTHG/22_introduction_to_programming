@@ -30,7 +30,7 @@ def load_words():
     # wordlist: list of strings
     wordlist = line.split()
     print( "  ", len(wordlist), "words loaded.")
-    print('Enter play_hangman() to play a game of hangman!')
+    print('Welcome to the game Hangman!')
     return wordlist
 
 # actually load the dictionary of words and point to it with
@@ -48,6 +48,7 @@ def get_word():
     Returns a random word from the word list
     """
     word = words_dict[randrange(0, len(words_dict))]
+    print(f"\nI am thinking of a word that is {len(word)} letters long...")
     return word
 
 # end of helper code
@@ -59,6 +60,7 @@ letters_guessed = []
 max_guesses = 6
 guess = ''
 warnings = 3
+current_guess = ''
 
 # From part 3b:
 def word_guessed():
@@ -71,11 +73,30 @@ def word_guessed():
     secret_set = set(secret_word)
     guessed_set = set(letters_guessed)
     if secret_set.issubset(guessed_set):
-        print("Congratulations, you won!")
+        congrats()
+
+
+def congrats():
+    print(f"\nThe word is '{secret_word}'")
+    print("Congratulations, you won!")
+    print(f"Your total score for this game is: {max_guesses * len(set(secret_word))}")
+    another_game()
+
+
+def another_game():
+    global secret_word
+    another = input("\nWould you like another game? (y/n)")
+    if another not in ['y', 'n']:
+        another_game()
+    elif another == 'y':
+        secret_word = get_word()
+        play_hangman()
+    elif another == 'n':
         exit(0)
 
 
 def print_guessed():
+    global current_guess
     '''
     Prints a string that contains the word with a dash "-" in
     place of letters not guessed yet.
@@ -88,14 +109,16 @@ def print_guessed():
             to_print.append(letter)
         else:
             to_print.append('-')
+    current_guess = to_print
     return to_print
 
 
-def congrats():
-    pass
-
-
 def check_error():
+    global max_guesses
+    if guess == '*':
+        max_guesses -= 1
+        print("Possible word matches are:", show_possible_matches(''.join(print_guessed())))
+        play_hangman()
     if guess not in list(ascii_lowercase):
         non_letter()
     elif guess in letters_guessed:
@@ -122,7 +145,7 @@ def warning_check():
     if warnings == -1:
         max_guesses -= 1
         warnings = 3
-        print(f"You have no warnings left so you loose one guess. You have {max_guesses} guesses left")
+        print("You have no warnings left so you loose one guess.")
     else:
         print(f"You have {warnings} warnings left:")
     play_hangman()
@@ -143,14 +166,40 @@ def check_guess():
     letters_guessed.append(guess)
     if guess not in secret_word:
         not_in_word()
+    print(f"Good guess: {''.join(print_guessed())}")
     play_hangman()
 
 
 def not_in_word():
     global max_guesses
-    max_guesses -= 1
-    print("Oops! That letter is not in my word")
+    if guess in ['a', 'e', 'i', 'o', 'u']:
+        max_guesses -= 2
+        print("Oops! That vowel is not in my word. You loose two guesses")
+    else:
+        max_guesses -= 1
+        print("Oops! That letter is not in my word. You loose a guess")
     play_hangman()
+
+
+def match_the_gap(my_word, other_word):
+    my_word = my_word.strip()
+    other_word = other_word.strip()
+    if len(my_word) != len(other_word):
+        return False
+    for i, letter in enumerate(my_word):
+        if my_word[i] == '-' or my_word[i] == other_word[i]:
+            continue
+        elif my_word[i] != '-' and my_word[i] != other_word[i]:
+            return False
+    return True
+
+
+def show_possible_matches(my_word):
+    matching_words = []
+    for word in words_dict:
+        if match_the_gap(my_word, word):
+            matching_words.append(word)
+    return matching_words
 
 
 def play_hangman():
@@ -161,12 +210,11 @@ def play_hangman():
     word_guessed()
     too_many_turns()
     print(f"\nYou have {max_guesses} guesses left")
-    print("Available Letters:", set(ascii_lowercase).difference(letters_guessed))
-    print("Hangman Word:", print_guessed())
+    print("Available Letters:", ''.join(set(ascii_lowercase).difference(letters_guessed)))
+    print("Hangman Word:", ''.join(print_guessed()))
     guess = input('Guess a letter champ:')
     check_error()
     check_guess()
-
 
 
 play_hangman()
